@@ -72,11 +72,21 @@ img {
 
 @media screen and (max-width: 767px) {
     .container {
-        min-width: 320px;
+        min-width: 300px;
         max-width: 375px;
         margin: 0 auto;
         padding: 0 20px;
     }
+
+
+        /* ============================== Header ============================== */
+        /* ============================== Header ============================== */
+        /* ============================== Header ============================== */
+    
+    
+        /* ============================== Hero ============================== */
+        /* ============================== Hero ============================== */
+        /* ============================== Hero ============================== */
 
     .hero-section {
         background-color: var(--background-dark-color);
@@ -97,80 +107,143 @@ img {
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .background-image-section { url('../images/chocolate-background-670x1240-mobile@2x.jpg');
+            .background-image-section {
+                background-image: url('../images/chocolate-background-670x1240-mobile@2x.jpg');
             }
         }
+    
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .sub-headline-hero {
+        color: var(--text-light-color);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1,2;
+        letter-spacing: 0,0375em;
+    }
     
     .modal-and-link-button {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        gap: 32px;
     }
 
     .modal-button-first-line {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 14px;
     }
 
+    .buy-now-button {
+        color: var(--text-light-color);
+        background-color: var(--background-orange-color);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: block;
+        /*width: xx;
+        height: xx;*/
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        padding: 12px 28px;
+        margin: auto;
+    }
+
+    .how-it-is-made-button {
+        color: var(--text-light-color);
+        background-color: transparent;
+        display: block;
+        /*width: xx;
+        height: xx;*/
+        border: 1px solid var(--text-light-color);
+        border-radius: 100px;
+        cursor: pointer;
+        padding: 12px 28px;
+        margin: auto;
+    }
+
+    .link-made-button {
+        color: var(--text-light-color);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .scroll-down-button {
+        color: var(--text-light-color);
+        background-color: transparent;
+        display: block;
+        border: none;
+        cursor: pointer;
+    }
+
+    .link-scoll {
+        color: var(--text-light-color);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1,17;
+        letter-spacing: -0,0225em;
+    }
+
+        /* ============================== Advantages ============================== */
+        /* ============================== Advantages ============================== */
+        /* ============================== Advantages ============================== */
+    
+    
+        /* ============================== Unique components ============================== */
+        /* ============================== Unique components ============================== */
+        /* ============================== Unique components ============================== */
+    
+    
+        /* ============================== How it’s made? ============================== */
+        /* ============================== How it’s made? ============================== */
+        /* ============================== How it’s made? ============================== */
+    
+    
+        /* ============================== Our products ============================== */
+        /* ============================== Our products ============================== */
+        /* ============================== Our products ============================== */
+    
+    
+        /* ============================== Top sellers ============================== */
+        /* ============================== Top sellers ============================== */
+        /* ============================== Top sellers ============================== */
+    
+    
+        /* ============================== Reviews ============================== */
+        /* ============================== Reviews ============================== */
+        /* ============================== Reviews ============================== */
+    
+    
+        /* ============================== Subscribe ============================== */
+        /* ============================== Subscribe ============================== */
+        /* ============================== Subscribe ============================== */
+    
+        /* ============================== Footer ============================== */
+        /* ============================== Footer ============================== */
+        /* ============================== Footer ============================== */
+    
+        /* ========================= Modal Window - Buy now ========================= */
+    
+        /* ========================= Modal Window - Leave a review about our chocolate ==================== */
+    
+        /* ========================= Modal Window - Explore our new chocolate first ==================== */
+
 }
-
-/* ============================== Header ============================== */
-/* ============================== Header ============================== */
-/* ============================== Header ============================== */
-
-
-/* ============================== Hero ============================== */
-/* ============================== Hero ============================== */
-/* ============================== Hero ============================== */
-
-
-/* ============================== Advantages ============================== */
-/* ============================== Advantages ============================== */
-/* ============================== Advantages ============================== */
-
-
-/* ============================== Unique components ============================== */
-/* ============================== Unique components ============================== */
-/* ============================== Unique components ============================== */
-
-
-/* ============================== How it’s made? ============================== */
-/* ============================== How it’s made? ============================== */
-/* ============================== How it’s made? ============================== */
-
-
-/* ============================== Our products ============================== */
-/* ============================== Our products ============================== */
-/* ============================== Our products ============================== */
-
-
-/* ============================== Top sellers ============================== */
-/* ============================== Top sellers ============================== */
-/* ============================== Top sellers ============================== */
-
-
-/* ============================== Reviews ============================== */
-/* ============================== Reviews ============================== */
-/* ============================== Reviews ============================== */
-
-
-/* ============================== Subscribe ============================== */
-/* ============================== Subscribe ============================== */
-/* ============================== Subscribe ============================== */
-
-/* ============================== Footer ============================== */
-/* ============================== Footer ============================== */
-/* ============================== Footer ============================== */
-
-/* ========================= Modal Window - Buy now ========================= */
-
-/* ========================= Modal Window - Leave a review about our chocolate ==================== */
-
-/* ========================= Modal Window - Explore our new chocolate first ==================== */
-
-
 
 
 
