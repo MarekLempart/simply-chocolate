@@ -180,23 +180,50 @@ img {
         font-weight: 600;
         line-height: normal;
     }
-
-    .scroll-down-button {
+    
+    .scroll-button-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
         color: var(--text-light-color);
         background-color: transparent;
-        display: block;
-        border: none;
-        cursor: pointer;
+        fill: var(--text-orange-color);
+        transition: background-color var(--transition-duration) var(--transition-tf);
     }
 
-    .link-scoll {
+    .scroll-button-box:hover .scroll-down-button,
+    .scroll-button-box:focus .scroll-down-button {
+        background-color: var(--background-orange-color);
+        fill: var(--text-light-color)
+    }
+    .link-scroll {
         color: var(--text-light-color);
         font-family: 'Montserrat', sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
-        line-height: 1,17;
-        letter-spacing: -0,0225em;
+            /*line-height: 1,17;
+            letter-spacing: -0,0225em;*/
+    }
+
+    .scroll-down-button {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+            /*display: flex;
+            align-items: center;
+            justify-content: center;*/
+        background-color: var(--background-white-color);
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }    
+
+    .button-scroll-icon {
+        transition: fill var(--transition-duration) var(--transition-tf);
     }
 
         /* ============================== Advantages ============================== */
