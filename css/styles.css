@@ -16,6 +16,7 @@ body {
     --background-light-color:#FAFAFA;
     --background-white-color:#FFFFFF;
     --background-orange-color:#FD9222;
+    --background-button-color:#FCF1E0;
     --background-modal-light-color:#FAFAFA;
 
     --transition-duration: 250ms;
@@ -38,6 +39,10 @@ img {
     text-decoration: none;
 }
 
+.list {
+    list-style: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -53,8 +58,8 @@ img {
 
 .container {
     width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
+    padding: 0px 0px;
+    margin: 0px auto;
 }
 
 /* ============================== Header ============================== */
@@ -67,6 +72,7 @@ img {
     background-color: var(--background-dark-color);
     padding: 395px 20px 20px;
     border-radius: 30px;
+    margin: 19px 20px 71px;
 }
 
 .hero-container {
@@ -112,6 +118,15 @@ img {
     cursor: pointer;
     padding: 12px 28px;
     margin: auto;
+    transition-property: background-color, color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-tf);
+}
+
+.buy-now-button:hover,
+.buy-now-button:focus {
+    background-color: var(--background-button-color);
+    color: var(--text-orange-color);
 }
 
 .how-it-is-made-button {
@@ -123,6 +138,15 @@ img {
     cursor: pointer;
     padding: 12px 28px;
     margin: auto;
+    transition-property: background-color, border;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-tf);
+}
+
+.how-it-is-made-button:hover,
+.how-it-is-made-button:focus {
+    background-color: var(--background-white-color);
+    border: 1px solid var(--text-orange-color);
 }
 
 .link-made-button {
@@ -132,6 +156,14 @@ img {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-tf);
+}
+
+.link-made-button:hover,
+.link-made-button:focus {
+    color: var(--text-orange-color);
 }
 
 .scroll-button-box {
@@ -182,6 +214,37 @@ img {
 
 /* ============================== Advantages ============================== */
 
+.advantages-section {
+    background-color: var(--background-dark-color);
+}
+
+.advantages-page-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0px;
+    gap: 20px;
+}
+
+.advantages-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sub-headline-advantages {
+    color: var(--text-light-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.paragraph-advantages {
+    width: 308px;
+    color: var(--text-light-transparent-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
 
 /* ============================== Unique components ============================== */
 
@@ -223,10 +286,10 @@ img {
 
 @media screen and (max-width: 767px) {
     .container {
-        min-width: 300px;
+        min-width: 320px;
         max-width: 375px;
-        margin: 0 auto;
-        padding: 0 20px;
+        margin: 0px auto;
+        padding: 0px 0px;
     }
 
 
@@ -286,11 +349,13 @@ img {
         /* ======================================== MOBILE 👇 ======================================== */
     
         /* ========================= Modal Window - Buy now ========================= */
+        /* ======================================== MOBILE 👇 ======================================== */
     
         /* ========================= Modal Window - Leave a review about our chocolate ==================== */
-    
-        /* ========================= Modal Window - Explore our new chocolate first ==================== */
+        /* ======================================== MOBILE 👇 ======================================== */
 
+        /* ========================= Modal Window - Explore our new chocolate first ==================== */
+        /* ======================================== MOBILE 👇 ======================================== */
 }
 
 
@@ -372,8 +437,6 @@ img {
         height: 38px;
     }
 
-}
-
     /* ============================== Advantages ============================== */  
     /* ======================================== TABLET 👇 ==========================    ============== */
 
@@ -405,12 +468,15 @@ img {
     /* ======================================== TABLET 👇 ======================================== */
 
     /* ========================= Modal Window - Buy now ========================= */
+    /* ======================================== TABLET 👇 ======================================== */
 
     /* ========================= Modal Window - Leave a review about our chocolate ==================== */
+    /* ======================================== TABLET 👇 ======================================== */
 
     /* ========================= Modal Window - Explore our new chocolate first ==================== */
+    /* ======================================== TABLET 👇 ======================================== */
 
-
+}
 
 
 
@@ -475,7 +541,6 @@ img {
             background-image: url('../images/chocolate-background-2272-1200-desktop@2x.jpg');
         }
     }
-}
 
     /* ============================== Advantages ============================== */
     /* ======================================== DESKTOP 👇 ======================================== */
@@ -508,7 +573,11 @@ img {
     /* ======================================== DESKTOP 👇 ======================================== */
 
     /* ========================= Modal Window - Buy now ========================= */
+    /* ======================================== DESKTOP 👇 ======================================== */
 
     /* ========================= Modal Window - Leave a review about our chocolate ==================== */
+    /* ======================================== DESKTOP 👇 ======================================== */
 
     /* ========================= Modal Window - Explore our new chocolate first ==================== */
+    /* ======================================== DESKTOP 👇 ======================================== */
+}
