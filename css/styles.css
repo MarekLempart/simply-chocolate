@@ -286,8 +286,8 @@ img {
 
 @media screen and (max-width: 767px) {
     .container {
-        min-width: 320px;
-        max-width: 375px;
+        min-width: 375px;
+        max-width: 400px;
         margin: 0px auto;
         padding: 0px 0px;
     }
@@ -306,7 +306,7 @@ img {
         background-repeat: no-repeat;
         background-position: center;
         max-width: 767px;
-        min-width: 320px;
+        min-width: 375px;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -404,7 +404,7 @@ img {
         }
     }
 
-    .sub-headline-hero {
+    .hero-sub-headline {
         color: var(--text-light-color);
         width: 484px;
         font-size: 28px;
@@ -413,25 +413,25 @@ img {
         letter-spacing: -0.03em;
     }
 
-    .scroll-button-box {
+    .hero-scroll-button-box {
         gap: 14px;
     }
 
-    .buy-now-button {
+    .hero-buy-now-button {
         padding: 14px 40px;
     }
     
-    .how-it-is-made-button {
+    .hero-how-it-is-made-button {
         padding: 14px 40px;
     }
 
-    .link-scroll {
+    .hero-link-scroll {
         font-size: 14px;
         line-height: 1.29;
         letter-spacing: -0.03em;
     }
     
-    .scroll-down-button {
+    .hero-scroll-down-button {
         display: block;
         width: 38px;
         height: 38px;
@@ -579,5 +579,5 @@ img {
 
     /* ========================= Modal Window - Explore our new chocolate first ==================== */
     /* ======================================== DESKTOP 👇 ======================================== */
-    
+
 }
