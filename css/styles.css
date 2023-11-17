@@ -81,7 +81,7 @@ img {
     gap: 32px;
 }
 
-.sub-headline-hero {
+.hero-sub-headline {
     color: var(--text-light-color);
     font-size: 20px;
     font-weight: 500;
@@ -89,7 +89,7 @@ img {
     letter-spacing: -0.0375em;
 }
 
-.modal-and-link-button {
+.hero-modal-and-link-button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -97,14 +97,14 @@ img {
     gap: 32px;
 }
 
-.modal-button-first-line {
+.hero-modal-button-first-line {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 14px;
 }
 
-.buy-now-button {
+.hero-buy-now-button {
     color: var(--text-light-color);
     background-color: var(--background-orange-color);
     font-family: 'Montserrat', sans-serif;
@@ -123,13 +123,13 @@ img {
     transition-timing-function: var(--transition-tf);
 }
 
-.buy-now-button:hover,
-.buy-now-button:focus {
+.hero-buy-now-button:hover,
+.hero-buy-now-button:focus {
     background-color: var(--background-button-color);
     color: var(--text-orange-color);
 }
 
-.how-it-is-made-button {
+.hero-how-it-is-made-button {
     color: var(--text-light-color);
     background-color: transparent;
     display: block;
@@ -143,13 +143,13 @@ img {
     transition-timing-function: var(--transition-tf);
 }
 
-.how-it-is-made-button:hover,
-.how-it-is-made-button:focus {
+.hero-how-it-is-made-button:hover,
+.hero-how-it-is-made-button:focus {
     background-color: var(--background-white-color);
     border: 1px solid var(--text-orange-color);
 }
 
-.link-made-button {
+.hero-link-made-button {
     color: var(--text-light-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -161,12 +161,12 @@ img {
     transition-timing-function: var(--transition-tf);
 }
 
-.link-made-button:hover,
-.link-made-button:focus {
+.hero-link-made-button:hover,
+.hero-link-made-button:focus {
     color: var(--text-orange-color);
 }
 
-.scroll-button-box {
+.hero-scroll-button-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -178,13 +178,13 @@ img {
     transition: background-color var(--transition-duration) var(--transition-tf);
 }
 
-.scroll-button-box:hover .scroll-down-button,
-.scroll-button-box:focus .scroll-down-button {
+.hero-scroll-button-box:hover .hero-scroll-down-button,
+.hero-scroll-button-box:focus .hero-scroll-down-button {
     background-color: var(--background-orange-color);
     fill: var(--text-light-color)
 }
 
-.link-scroll {
+.hero-link-scroll {
     color: var(--text-light-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -194,7 +194,7 @@ img {
     letter-spacing: -0.0225em;
 }
 
-.scroll-down-button {
+.hero-scroll-down-button {
     display: block;
     width: 28px;
     height: 28px;
@@ -208,7 +208,7 @@ img {
     cursor: pointer;
 }
 
-.button-scroll-icon {
+.hero-button-scroll-icon {
     transition: fill var(--transition-duration) var(--transition-tf);
 }
 
@@ -232,13 +232,13 @@ img {
     gap: 18px;
 }
 
-.sub-headline-advantages {
+.advantages-sub-headline {
     color: var(--text-light-color);
     font-size: 18px;
     font-weight: 600;
 }
 
-.paragraph-advantages {
+.advantages-paragraph {
     width: 308px;
     color: var(--text-light-transparent-color);
     font-size: 14px;
@@ -301,7 +301,7 @@ img {
         /* ======================================== MOBILE 👇 ======================================== */
 
     .background-image-section {
-        background-image: url('../images/chocolate-background-335x620-mobile.jpg');
+        background-image: url('../images/hero/chocolate-background-335x620-mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -314,7 +314,7 @@ img {
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .background-image-section {
-                background-image: url('../images/chocolate-background-670x1240-mobile@2x.jpg');
+                background-image: url('../images/hero/chocolate-background-670x1240-mobile@2x.jpg');
             }
     }
         
@@ -387,7 +387,7 @@ img {
     /* ======================================== TABLET 👇 ======================================== */
 
     .background-image-section {
-        background-image: url('../images/chocolate-background-704x890-tablet.jpg');
+        background-image: url('../images/hero/chocolate-background-704x890-tablet.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -400,7 +400,7 @@ img {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .background-image-section {
-            background-image: url('../images/chocolate-background-1408x1780-tablet@2x.jpg');
+            background-image: url('../images/hero/chocolate-background-1408x1780-tablet@2x.jpg');
         }
     }
 
@@ -525,12 +525,11 @@ img {
     /* ============================== Hero ============================== */
     /* ======================================== DESKTOP 👇 ======================================== */
     .background-image-section {
-        background-image: url('../images/chocolate-background-1136x600-desktop.jpg');
+        background-image: url('../images/hero/chocolate-background-1136x600-desktop.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        max-width: 1300px;
-        min-width: 1200px;
+        max-width: 1200px;
     }
     
     @media (min-device-pixel-ratio: 2),
@@ -538,7 +537,7 @@ img {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .background-image-section {
-            background-image: url('../images/chocolate-background-2272-1200-desktop@2x.jpg');
+            background-image: url('../images/hero/chocolate-background-2272-1200-desktop@2x.jpg');
         }
     }
 
@@ -580,4 +579,5 @@ img {
 
     /* ========================= Modal Window - Explore our new chocolate first ==================== */
     /* ======================================== DESKTOP 👇 ======================================== */
+    
 }
